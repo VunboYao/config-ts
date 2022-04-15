@@ -1,0 +1,25 @@
+{
+  "name": "config-ts",
+  "version": "1.0.0",
+  "description": "a best config for typescript",
+  "files": [
+    "tsconfig.json"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VunboYao/config-ts.git"
+  },
+  "keywords": [
+    "tsconfig"
+  ],
+  "author": "vunbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VunboYao/config-ts/issues"
+  },
+  "homepage": "https://github.com/VunboYao/config-ts#readme"
+}
