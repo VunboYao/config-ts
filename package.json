@@ -1,11 +1,10 @@
 {
-  "name": "config-ts",
+  "name": "@vunbo/config-ts",
   "version": "1.0.0",
   "description": "a best config for typescript",
   "files": [
-    "tsconfig.json"
+    "./tsconfig.json"
   ],
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
