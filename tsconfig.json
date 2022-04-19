@@ -15,7 +15,7 @@
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
-    "target": "es2016", // 指定编译后的版本
+    "target": "es5", // 指定编译后的版本
 
     "module": "es6", // 指定要使用的模块化版本规范   none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'es2022', 'esnext', 'node12', 'nodenext'
 
