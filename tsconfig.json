@@ -29,7 +29,7 @@
 
     // "outFile": "", // 将全局作用域的文件合并为一个文件。只能是 module.amd 或 system 适用
 
-    "declaration": true, // 指定在编译时是否生成相应的 d.ts声明文件。 不能和 allowJs同时为 true
+    "declaration": false, // 指定在编译时是否生成相应的 d.ts声明文件。 不能和 allowJs同时为 true
 
     // "sourceMap": true, // 是否生成.map文件
 
