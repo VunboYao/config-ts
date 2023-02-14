@@ -1,6 +1,6 @@
 {
   "name": "@vunbo/config-ts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "a best config for typescript",
   "files": [
     "tsconfig.json"
