@@ -33,7 +33,7 @@
 
     "declaration": false, // 指定在编译时是否生成相应的 d.ts声明文件。 不能和 allowJs同时为 true
 
-    "sourceMap": true, // 是否生成.map文件
+    // "sourceMap": true, // 是否生成.map文件
 
     // "rootDir": "", // 指定编译文件的根目录，编译器会在根目录查找入口文件
 
