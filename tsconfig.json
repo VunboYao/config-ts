@@ -15,15 +15,17 @@
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
-    "target": "es5", // 指定编译后的版本
+    "target": "ESNext", // 指定编译后的版本，哪些语言特性可以使用，实际编译时用babel转换。根据.browserslistrc
 
-    "module": "es6", // 指定要使用的模块化版本规范   none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'es2022', 'esnext', 'node12', 'nodenext'
+    "module": "ESNext", // 指定要使用的模块化版本规范   none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'es2022', 'esnext', 'node12', 'nodenext'
 
-    // "baseUrl": "", // 解析非相对模块名称的基本目录
+    "baseUrl": ".", // 解析非相对模块名称的基本目录
 
-    // "paths": {}, // 设置模块名到基于 baseUrl 的路径映射
+    "paths": {
+      "@/*": ["src/*"]
+    }, // 设置模块名到基于 baseUrl 的路径映射
 
-    // "lib": ["es6", "dom"], // 指定需要用到的库
+    "lib": ["ESNext", "DOM", "ScriptHost", "DOM.Iterable"], // 指定需要用到的库
 
     // "outDir": "", // 指定编译后的文件所在目录
 
@@ -31,7 +33,7 @@
 
     "declaration": false, // 指定在编译时是否生成相应的 d.ts声明文件。 不能和 allowJs同时为 true
 
-    // "sourceMap": true, // 是否生成.map文件
+    "sourceMap": true, // 是否生成.map文件
 
     // "rootDir": "", // 指定编译文件的根目录，编译器会在根目录查找入口文件
 
@@ -71,7 +73,7 @@
 
     // "types": [], // 指定需要包含的模块，只有这里列出的模块的声明文件才会被加载
 
-    // "jsx": "preserve", // 指定 jsx 代码用于的开发环境
+    "jsx": "preserve", // 指定 jsx 代码用于的开发环境(保留代码格式，不转换成对应的createElement)
 
     "noUnusedLocals": false, // 若有未使用的局部变量则报错
 
@@ -81,6 +83,6 @@
 
     // "noFallthroughCasesInSwitch": false, // 检查switch中是否有case没有使用break跳出switch,默认为false
 
-    "skipLibCheck": false // 忽略所有的声明文件的类型检查
+    "skipLibCheck": true // 忽略库内部文件的类型检查
   }
 }
